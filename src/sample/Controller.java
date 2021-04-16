@@ -14,7 +14,7 @@ public class Controller {
    Button sendButton;
 
     public void sendMassage(){
-        if(mainTextField.equals("")) {
+        if(!mainTextField.getText().equals("")) {
             mainTextArea.appendText(mainTextField.getText() + "\n");
             mainTextField.clear();
             mainTextField.requestFocus();
